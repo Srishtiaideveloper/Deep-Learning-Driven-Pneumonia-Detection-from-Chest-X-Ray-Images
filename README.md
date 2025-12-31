@@ -50,8 +50,25 @@ These visualizations help ensure that predictions are based on clinically meanin
 ```text
 
 Pneumonia-Detection/
-├── data/ 
-├── notebooks/ 
-├── utils/ 
+│
+├── data/
+│   └── chest_xray/
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_baseline_cnn.ipynb
+│   ├── 03_transfer_learning_models.ipynb
+│   └── 04_evaluation_and_visuals.ipynb
+│
 ├── models/
+│   └── saved_models/
+│ 
+├── utils/
+│   ├── data_loader.py
+│   ├── evaluation.py
+│   └── gradcam.py
+│
+├── dashboard.py  
+├── requirements.txt
 └── README.md
+
